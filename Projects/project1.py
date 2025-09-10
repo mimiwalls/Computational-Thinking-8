@@ -1,0 +1,6 @@
+name = input("what is your name?")
+print(f"hello {name} welcome to the chat box")
+myclass= input("what class are you in today")
+print(f"well im glad to hear that {myclass} is happing for you this year!")
+Class1=("what other classes are you exited for?!")
+Print (f"{Class1} seems fun!")
