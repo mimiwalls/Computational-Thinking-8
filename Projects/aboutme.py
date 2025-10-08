@@ -53,18 +53,23 @@ window.tracer(0)
 # https://en.wikipedia.org/wiki/Web_colors#Extended_colors
 # Section 2 - Your code
 set_background("flowers")
-
+# Rectangles and the location
 draw_rectangle("white", 100, 100, 200, 200)
 draw_rectangle("purple", -100, 100, 200, 200)
 draw_rectangle("pink", 100, -100, 200, 200)
+draw_rectangle("blue", -100, -100, 200, 200)
 
+#lots of differnt anaimals and a soccer ball
 s1 = create_sprite("dog", 100, 100)
-s2 = create_sprite("soccerball", -100, -100)
+s2 = create_sprite("soccerball", 100, -100)
 s3 = create_sprite("dolphin", -100, 100)
-
+s4 = create_sprite("fox2", -100, -100)
+#more code about me and behind the sences 
 message1 = create_sprite("alien",-200,200)
 message1.color("blue")
-message1.write("ABOUT MIMI!!",font = ("Arial", 40, "normal"))
+#About mimi
+message1.write("ABOUT MIMI!!",font = ("Arial", 50, "normal"))
+message1.write("all about mimi",font = ("Arial", 10, "normal"))
 message1.hideturtle()
 
 
