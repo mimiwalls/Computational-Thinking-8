@@ -12,13 +12,13 @@ if answer == "A":
 elif answer == "B": 
      cat_points += 1 
 answer = input("what would you rather do A) go travel for the rest of your life, or B or stay at home for the rest of your life?")
-if answer == "A" or answer "a":
+if answer == "a" or answer == "A": 
         dog_points += 1 
 elif answer == "B" and cat_points > 3: 
      print ("you really like cats!!!") 
      cat_points += 1  
 answer = input(" are you A) a very trusting person, or B some one that can't trust people very well.")
-if answer == "A":
+if answer == "a" or answer == "A": 
     dog_points += 1 
 elif answer == "B": 
      cat_points += 1 
@@ -28,6 +28,7 @@ if answer == "A":
 elif answer == "B":
      cat_points += 1 
 if cat_points > dog_points:
-     print ("you are a dog!!!")
-elif dog_points > cat_points 
+     print ("you are cat person!!!")
+elif dog_points > cat_points:
     print ("you are a dog person!")
+    print ("thanks for playing")
