@@ -50,19 +50,24 @@ window.tracer(0)
 
 # Section 2: Setup
 # TODO - create your player character
-s1 =  create_sprite("bird", 100,200)
-set_backround("castle")
+s1 =  create_sprite("dog", 100,200)
+set_background("castle")
 # TODO - set the starting value for your variable
 
 # Section 3: Controls
-def move_up(200): 
+def move_up(): 
 	s1.setheading(90)
-	s1.forward (distance)
-window.onkeypress(action,"up")
+	s1.forward (200)
+window.onkeypress(move_up,"Up")
+def move_down(): 
+	s1.setheading(270)
+	s1.forward (200)
+window.onkeypress(move_down,"Down")
 
 # Section 4: Game Loop
 window.listen()
 timer = 0
+lives = 3
 obstacles=[]
 while True:
 	time.sleep(0.1)
@@ -72,20 +77,20 @@ while True:
  # automaticly create basketballs every 1 seconds
 
 	if timer % 10 == 0:
-		y_position = random.radint(-250, 250)
-		s2 = create_sprite("basketball",300y_position)
+		y_position = random.randint(-250, 250)
+		s2 = create_sprite("basketball",300,y_position)
 		s2.setheading(180)
-		obsatcles.append(s2) 
+		obstacles.append(s2) 
 
 	# move each ball 
-	for s2 in obsatacles:
+	for s2 in obstacles:
 		s2.forward(10)
 
 # if you collide, lose a life  
 		if get_distance(s1,s2) < 50:
 			lives -= 1 
 			s2.hideturtle()
-			obsatcles.remove(s2) 
+			obstacles.remove(s2) 
 
 
 
